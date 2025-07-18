@@ -161,10 +161,29 @@ header::before {
 
 }
 
+
 .header-content h1 {
   font-size: 6rem;
   margin-bottom: 1rem;
   font-family: "Merriweather Sans", sans-serif;
+}
+@media (max-width: 768px) {
+  .header-content h1 {
+    font-size: 2.5rem;
+    padding: 0 20px;
+    line-height: 1.2;
+  }
+
+  .header-content {
+    padding-top: 40px;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-content h1 {
+    font-size: 4rem;
+  }
 }
 .nav-container {
   display: flex;
@@ -501,4 +520,33 @@ header::before {
   margin-top: 20px;
   font-size: 14px;
   color: black;
+}
+@media (max-width: 768px) {
+  .footer-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-col h4 {
+    font-size: 16px;
+  }
+
+  .footer-bottom {
+    font-size: 13px;
+    padding: 1rem;
+  }
 }
